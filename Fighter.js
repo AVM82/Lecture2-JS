@@ -6,12 +6,12 @@ class Fighter {
 	}
 
 	setDamage(damage) {
-		this.health -= damage;//check without this
+		this.health -= damage;
 		console.log(health);
 	}
 
 	hit(enemy, point) {
-		let damage = point * enemy.power;
+		let damage = point * this.power;
 		enemy.setDamage(damage);
 
 	}
