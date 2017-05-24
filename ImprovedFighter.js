@@ -1,7 +1,7 @@
 
 class ImprovedFighter extends Fighter {
-	doubleHit() {
-		hit(enemy, point*2);
+	doubleHit(enemy, point) {
+		super.hit(enemy, point*2);
 	}
 };
 
