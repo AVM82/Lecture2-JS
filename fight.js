@@ -1,8 +1,18 @@
 
-//let improvedFighter = new ImprovedFighter("improvedFighter", 10, 50);
+function fight (fighter, improvedFighter, ...point){
 
-let fighter = new Fighter("fighter", 50, 150);
-let fight = function(fighter2, improvedFighter, ...point){
-    console.log('fighter');
+   printFighter("First fighter", fighter);
+   printFighter("Second fighter", improvedFighter);
+
+   while (fighter.health > 0 && improvedFighter.health > 0) {
+
+
+        fighter.hit(improvedFighter, point[1]);
+        improvedFighter.hit(fighter, point[1]);
+    }
+
+
+
+
 }
 
