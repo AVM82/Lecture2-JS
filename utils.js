@@ -1,5 +1,8 @@
-generateValue = (from , to) => Math.floor((Math.random() * to) + from);
+
+generateValue = (from = 1 , to = 100) => Math.floor((Math.random() * to) + from);
+
 generateFighterParam = () => [generateValue(1, 10), generateValue(300, 700)];
+
 function printFighter(message, fighter) {
         document.write(`${message}:<br\>`);
         for (key in fighter) {
@@ -7,6 +10,7 @@ function printFighter(message, fighter) {
             document.write(`<span style="margin-left:2em">${key}:${fighter[key]}</span><br\>`);
         }
 	}
+	
 generatePoint = () => {
     let countPoint = generateValue(1, 10);
     let pointArray = [];

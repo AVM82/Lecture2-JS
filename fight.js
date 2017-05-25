@@ -9,7 +9,7 @@ function fight (fighter, improvedFighter, ...point){
             fighter.hit(improvedFighter, point[generateValue(1,point.length)-1]);
         } else {
 
-            if (generateValue(1,100) > 90){
+            if (generateValue() > 90){
                 console.log("DOUBLE HIT!!!");
                 improvedFighter.doubleHit(fighter, point[generateValue(1,point.length)-1]);
             } else {
